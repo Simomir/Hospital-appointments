@@ -1,1 +1,1 @@
-<h1 class="text-center">Header</h1>
+@include('components.navbar')
