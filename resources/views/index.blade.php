@@ -8,7 +8,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="" alt=""/>
                     <div class="card-body">
-                        <div class="card-title">title</div>
+                        <div class="card-title">{{ $data }}</div>
                         <div class="card-text">content</div>
                     </div>
                 </div>
