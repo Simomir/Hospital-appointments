@@ -13,7 +13,7 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
-Route::get('/', [ProjectController::class, 'getData']);
+Route::get('/', [ProjectController::class, 'getAllDepartments']);
 
 Route::middleware([
     'auth:sanctum',
