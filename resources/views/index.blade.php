@@ -10,6 +10,7 @@
                         <div class="card-body">
                             <div class="card-title">{{ $department->name }}</div>
                             <div class="card-text">{{ $department->description }}</div>
+                            @include('components.appointment_form')
                         </div>
                     </div>
                 </div>

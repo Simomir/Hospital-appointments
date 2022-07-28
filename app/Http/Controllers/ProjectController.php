@@ -16,4 +16,8 @@ class ProjectController extends Controller
         $departments = Department::all();
         return view('index')->with('departments', $departments);
     }
+
+    public function showAppointments(Request $request) {
+
+    }
 }
