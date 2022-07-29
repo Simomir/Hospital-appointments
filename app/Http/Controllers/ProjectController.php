@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Department;
+use App\Models\Appointment;
 
 class ProjectController extends Controller
 {
@@ -18,6 +19,8 @@ class ProjectController extends Controller
     }
 
     public function showAppointments(Request $request) {
-
+        $department_id = $request->input('department_id');
+        $appointments = Appointment::where('department_id', $department_id)->get();
+        return view('appointments')->with('appointments', $appointments);
     }
 }
